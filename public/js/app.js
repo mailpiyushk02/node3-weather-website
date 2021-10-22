@@ -22,7 +22,7 @@ weatherFrom.addEventListener("submit", (e) => {
       if (data.error) {
         messageOne.textContent = data.error;
       } else {
-        messageOne.textContent = data.location;
+        messageOne.textContent = `Location: ${data.location}`;
         messageTwo.textContent = data.forecast;
       }
     });
