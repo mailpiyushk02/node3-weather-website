@@ -14,9 +14,9 @@ const forecast = (location, callback) => {
     } else {
       callback(
         undefined,
-        `It is currently ${data.current.temp_c} degrees Celsius. It is ${data.current.condition.text} and there is ${data.current.precip_mm}% chance of rain today.\n
-        Wind Speed: ${data.current.wind_kph}kph\n
-        Pressure: ${data.current.pressure_mb}mb\n
+        `It is currently ${data.current.temp_c} degrees Celsius. It is ${data.current.condition.text} and there is ${data.current.precip_mm}% chance of rain today.
+        Wind Speed: ${data.current.wind_kph}kph
+        Pressure: ${data.current.pressure_mb}mb
         Humidity: ${data.current.humidity}
         `
       );
